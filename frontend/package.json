@@ -1,0 +1,51 @@
+{
+  "name": "react-testing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "5.0.1",
+    "typescript": "^5.4.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start:dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test:ci": "react-scripts test --watchAll --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+
+    "coveragePathIgnorePatterns": [
+      "src/App.jsx",
+      "src/index.js",
+      "src/old/",
+      "src/utils/"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^4.9.5"
+  }
+}
