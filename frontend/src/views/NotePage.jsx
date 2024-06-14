@@ -1,6 +1,7 @@
 import React from 'react';
 import CreateNoteForm from '../components/CreateNoteForm';
 import ViewList from '../components/NoteList';
+import DeleteNote from '../components/DeleteNote';
 
 
 
@@ -12,6 +13,7 @@ const NotePage = () => {
             <CreateNoteForm />       
             <ViewList/>
         
+            <DeleteNote />  
         </div>
     );
 };
